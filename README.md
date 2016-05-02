@@ -4,12 +4,17 @@ renewLetsEncryptCert
 Script to renew a lets Encrypt Cert!
 
 * Supposed to be used as part of a cron job
-* assumes standalone server running on localhost
+* Assumes standalone server running on localhost
 * Checks for configurable number of days left (if below this renews)
 * Configurable port
 * Configurable service restart
 * If renewal fails, it bails
 * Uses logger to log to syslog
+
+Arguments
+=========
+
+renewLetsEncryptCert.sh [hostname] [httpsPort] [daysBeforeRenwal] [service to restart]
 
 Example
 =======
